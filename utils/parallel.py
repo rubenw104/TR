@@ -26,8 +26,8 @@ def set_device(config, rank):
         config.train_bs *= config.gpu_num
 
     # Setup num_workers
-    config.num_workers=4
-    # config.num_workers = config.gpu_num * config.base_workers
+    #config.num_workers=4
+    config.num_workers = config.gpu_num * config.base_workers
 
     return device
     
